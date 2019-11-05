@@ -1,4 +1,4 @@
 module.exports = {
-  mongoURI: "YOUR_MONGO_URI_HERE",
+  mongoURI: "mongodb://localhost:27017/trainee-system",
   secretOrKey: "secret"
 };

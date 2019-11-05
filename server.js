@@ -1,5 +1,4 @@
 const express = require("express");
-const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const passport = require("passport");
 
@@ -15,18 +14,17 @@ app.use(
 );
 app.use(bodyParser.json());
 
+var mongoose = require('mongoose');
+
 // DB Config
 const db = require("./config/keys").mongoURI;
 
 // Connect to MongoDB
-mongoose
-  .connect(
-    db,
-    { useNewUrlParser: true }
-  )
-  .then(() => console.log("MongoDB successfully connected"))
-  .catch(err => console.log(err));
-
+mongoose.connect(db,{ useNewUrlParser: true, useUnifiedTopology: true }, function(err) {
+    if (!err) {
+        console.log("Local Database successfully connected");
+    }
+}); 
 // Passport middleware
 app.use(passport.initialize());
 
