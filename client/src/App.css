@@ -1,0 +1,7 @@
+.App {
+    background-image: url('landing-bg.jpg');
+    background-repeat: no-repeat;
+    /* background-attachment: fixed; */
+    /* background-position: center; */
+    background-size: 100% 100%;
+}

@@ -11,7 +11,7 @@ class Footer extends Component {
                         <div class="text-center center-block">
                             <a href="https://www.facebook.com/TorryHarrisIntegrationSolutions/"><i id="social-fb" class="fa fa-facebook-square fa-3x social"></i></a>
                             <a href="https://twitter.com/torryharris"><i id="social-tw" class="fa fa-twitter-square fa-3x social"></i></a>
-                            <a href="li"><i id="social-ln" class="fa fa-linkedin-square fa-3x social"></i></a>
+                            <a href="https://www.linkedin.com/company/torry-harris-integration-solutions/"><i id="social-ln" class="fa fa-linkedin-square fa-3x social"></i></a>
                         </div>
                         &copy; Marshmallow 2019
                     </div>
