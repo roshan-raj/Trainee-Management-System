@@ -131,6 +131,7 @@ Login.propTypes = {
   errors: PropTypes.object.isRequired
 };
 
+// The mapStateToProps function's first argument is the entire Redux store’s state and it returns an object to be passed as props.
 const mapStateToProps = state => ({
   auth: state.auth,
   errors: state.errors
